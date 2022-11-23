@@ -37,19 +37,39 @@ const handleUserInput = (key) => {
   // double time!
   if (key === 't') {
     connection.write("Move: up");
-    connection.write("Move: up");
+    setTimeout(() => {
+      connection.write("Move: up");
+    }, 50);
+    setTimeout(() => {
+      connection.write("Move: up");
+    }, 100);
   }
   if (key === 'f') {
     connection.write("Move: left");
-    connection.write("Move: left");
+    setTimeout(() => {
+      connection.write("Move: left");
+    }, 50);
+    setTimeout(() => {
+      connection.write("Move: left");
+    }, 100);
   }
   if (key === 'g') {
     connection.write("Move: down");
-    connection.write("Move: down");
+    setTimeout(() => {
+      connection.write("Move: down");
+    }, 50);
+    setTimeout(() => {
+      connection.write("Move: down");
+    }, 100);
   }
   if (key === 'h') {
     connection.write("Move: right");
-    connection.write("Move: right");
+    setTimeout(() => {
+      connection.write("Move: right");
+    }, 50);
+    setTimeout(() => {
+      connection.write("Move: right");
+    }, 100);
   }
   // chat messages
   if (key === CHAT_ONE_KEY) { //j
