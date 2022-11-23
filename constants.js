@@ -1,12 +1,12 @@
 const IP = "localhost";
 const PORT = 50541;
-const MOVE_UP_KEY = '\u0077'; //w
-const MOVE_LEFT_KEY = '\u0061'; //a
-const MOVE_DOWN_KEY = '\u0073'; //s
-const MOVE_RIGHT_KEY = '\u0064'; //d
-const CHAT_ONE_KEY = '\u006A'; //j
-const CHAT_TWO_KEY = '\u006B'; //k
-const CHAT_THREE_KEY = '\u006C'; //l
+const MOVE_UP_KEY = 'w';
+const MOVE_LEFT_KEY = 'a'; //a
+const MOVE_DOWN_KEY = 's'; //s
+const MOVE_RIGHT_KEY = 'd'; //d
+const CHAT_ONE_KEY = 'j'; //j
+const CHAT_TWO_KEY = 'k'; //k
+const CHAT_THREE_KEY = 'l'; //l
 
 module.exports = {
   IP,

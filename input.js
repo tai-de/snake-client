@@ -1,3 +1,5 @@
+const { MOVE_UP_KEY, MOVE_LEFT_KEY, MOVE_DOWN_KEY, MOVE_RIGHT_KEY, CHAT_ONE_KEY, CHAT_TWO_KEY, CHAT_THREE_KEY } = require("./constants");
+
 // Stores the active TCP connection object.
 let connection;
 
@@ -20,21 +22,47 @@ const handleUserInput = (key) => {
     process.exit();
   }
   // movement inputs
-  // up / w
-  if (key === '\u0077') {
+  if (key === MOVE_UP_KEY) {
     connection.write("Move: up");
   }
-  // left / a
-  if (key === '\u0061') {
+  if (key === MOVE_LEFT_KEY) {
     connection.write("Move: left");
   }
-  // down / s
-  if (key === '\u0073') {
+  if (key === MOVE_DOWN_KEY) {
     connection.write("Move: down");
   }
-  // right / d
-  if (key === '\u0064') {
+  if (key === MOVE_RIGHT_KEY) {
     connection.write("Move: right");
+  }
+  // double time!
+  if (key === 't') {
+    connection.write("Move: up");
+    connection.write("Move: up");
+  }
+  if (key === 'f') {
+    connection.write("Move: left");
+    connection.write("Move: left");
+  }
+  if (key === 'g') {
+    connection.write("Move: down");
+    connection.write("Move: down");
+  }
+  if (key === 'h') {
+    connection.write("Move: right");
+    connection.write("Move: right");
+  }
+  // chat messages
+  if (key === CHAT_ONE_KEY) { //j
+    connection.write("Say: l8r");
+  }
+  if (key === CHAT_TWO_KEY) { //k
+    connection.write("Say: snek snek");
+  }
+  if (key === CHAT_THREE_KEY) { //l
+    connection.write("Say: noo!!");
+  }
+  if (key === 'p') {
+    connection.write("Say: yo!");
   }
 };
 
