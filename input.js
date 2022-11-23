@@ -18,7 +18,7 @@ const setupInput = (conn) => {
 const handleUserInput = (key) => {
   // ctrl + c input to leave the game
   if (key === '\u0003') {
-    console.log(`bye bye!`);
+    console.log(`l8r!`);
     process.exit();
   }
   // movement inputs
